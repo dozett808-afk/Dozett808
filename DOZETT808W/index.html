@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DOZETT 808 | Studio & Sound Design</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,sans-serif;
+}
+
+body{
+background:radial-gradient(circle at top,#111,#000);
+color:#f5f5f5;
+overflow-x:hidden;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero img{
+width:340px;
+filter:grayscale(100%);
+}
+
+.hero h1{
+letter-spacing:10px;
+font-weight:300;
+margin-top:20px;
+color:#cfcfcf;
+}
+
+.hero p{
+margin-top:10px;
+color:#777;
+}
+
+/* SECTIONS */
+section{
+padding:90px 12%;
+border-top:1px solid #1a1a1a;
+}
+
+h2{
+font-weight:400;
+margin-bottom:30px;
+letter-spacing:3px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+/* CARDS */
+.card{
+background:rgba(255,255,255,0.03);
+border:1px solid #222;
+padding:18px;
+border-radius:10px;
+}
+
+/* ARTISTS */
+.artist{
+display:flex;
+gap:20px;
+align-items:center;
+margin-bottom:30px;
+flex-wrap:wrap;
+}
+
+.artist img{
+width:120px;
+height:120px;
+object-fit:cover;
+border-radius:8px;
+filter:grayscale(100%);
+}
+
+/* STUDIO */
+.studio-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:14px;
+}
+
+.studio-grid img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+filter:grayscale(100%);
+}
+
+/* CONTACT */
+.contact{
+background:rgba(255,255,255,0.03);
+padding:25px;
+border-radius:10px;
+border:1px solid #222;
+max-width:700px;
+color:#aaa;
+}
+
+/* BOOKING */
+.booking-box{
+max-width:700px;
+background:rgba(255,255,255,0.03);
+border:1px solid #222;
+padding:25px;
+border-radius:10px;
+}
+
+input, select, textarea{
+width:100%;
+padding:12px;
+margin-bottom:10px;
+background:#0a0a0a;
+border:1px solid #222;
+color:#fff;
+border-radius:6px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#fff;
+border:none;
+cursor:pointer;
+border-radius:6px;
+margin-top:8px;
+}
+
+button:hover{
+background:#ddd;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:50px;
+color:#555;
+border-top:1px solid #1a1a1a;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+<img src="Dozett_Logo.png">
+<h1>DOZETT 808</h1>
+<p>Studio • Sound Design • Underground Production</p>
+</div>
+
+<!-- ABOUT -->
+<section>
+<h2>About</h2>
+<p style="color:#aaa;max-width:900px;line-height:1.7;">
+DOZETT 808 ist ein Underground Studio für moderne Musikproduktion in Trap, Punk und Metal.
+</p>
+</section>
+
+<!-- ARTISTS -->
+<section>
+<h2>Artists</h2>
+
+<div class="artist">
+<img src="luca-zawar.jpg">
+<div>
+<strong>Luca Zawar</strong>
+<p style="color:#aaa;">Producer & Engineer</p>
+</div>
+</div>
+
+<div class="artist">
+<img src="yung-vision.jpg">
+<div>
+<strong>Yung Vision</strong>
+<p style="color:#aaa;">Trap Artist</p>
+</div>
+</div>
+
+<div class="artist">
+<img src="calvinsober.jpg">
+<div>
+<strong>Calvinsober</strong>
+<p style="color:#aaa;">Underground Rap</p>
+</div>
+</div>
+
+</section>
+
+<!-- STUDIO -->
+<section>
+<h2>Studio</h2>
+
+<div class="studio-grid">
+<img src="studio-01-control-room.jpg">
+<img src="studio-02-vocal-booth.jpg">
+<img src="studio-03-desk.jpg">
+<img src="studio-04-microphone-chain.jpg">
+</div>
+</section>
+
+<!-- WORK -->
+<section>
+<h2>Work</h2>
+
+<div class="grid">
+<div class="card">
+<p>Session</p>
+<iframe width="100%" height="180" src="https://www.youtube.com/embed/HCwyQ07KfPg?autoplay=1&mute=1"></iframe>
+</div>
+
+<div class="card">
+<p>Production</p>
+<iframe width="100%" height="180" src="https://www.youtube.com/embed/67aDz39A3gs?autoplay=1&mute=1"></iframe>
+</div>
+</div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+<h2>Studio Booking</h2>
+
+<div class="booking-box">
+
+<form action="https://formspree.io/f/xrejzdvg" method="POST">
+
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="E-Mail" required>
+
+<input type="datetime-local" name="booking_time" required>
+
+<select name="service">
+<option>Recording (40€/h)</option>
+<option>Mixing (60€)</option>
+<option>Mastering (30€)</option>
+<option>Custom Beat</option>
+</select>
+
+<textarea name="message" placeholder="Projektbeschreibung"></textarea>
+
+<button type="submit">Booking per E-Mail senden</button>
+
+</form>
+
+<!-- PAYPAL -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="dozettmusik@gmail.com">
+<input type="hidden" name="item_name" value="DOZETT 808 Studio Booking">
+<input type="hidden" name="currency_code" value="EUR">
+<input type="hidden" name="amount" value="40">
+
+<button type="submit" style="background:#009cde;color:#fff;">
+PayPal Zahlung
+</button>
+
+</form>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section>
+<h2>Contact</h2>
+
+<div class="contact">
+<p>Telefon: +49 15565 305520</p>
+<p>Email: dozett808@gmail.com</p>
+<p>Instagram: @dozett808</p>
+</div>
+</section>
+
+<footer>
+© DOZETT 808 — Studio & Sound Design
+</footer>
+
+</body>
+</html>
